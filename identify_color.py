@@ -1,3 +1,7 @@
+"""
+this file will access your webcam and display green and blue pixels simultaneously
+"""
+
 import cv2
 import numpy as np
 
@@ -22,8 +26,6 @@ while(1):
     cv2.imshow('frame', frame)
     cv2.imshow('mask', mask)
     cv2.imshow('res', res)
-
-    # cv2.imshow('mask', )
 
     k = cv2.waitKey(5) & 0xFF
     if k == 27:
