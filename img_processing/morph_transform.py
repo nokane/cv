@@ -47,4 +47,3 @@ blackhat = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
 cv2.imshow('img', blackhat)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
