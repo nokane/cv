@@ -29,3 +29,22 @@ closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 cv2.imshow('img', closing)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# Morphological Gradient - difference between dilation and erosion
+gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)
+cv2.imshow('img', gradient)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Top Hat - difference between input image and Opening of the image
+tophat = cv2.morphologyEx(img, cv2.MORPH_TOPHAT, kernel)
+cv2.imshow('img', tophat)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Black Hat - difference between the closing of an image, and the input image
+blackhat = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
+cv2.imshow('img', blackhat)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
